@@ -13,6 +13,10 @@ img {
     max-width: 100%;
 }
 
+.bi {font-size:1.5rem;
+    padding-inline: 0.5rem;         
+}
+
 body { 
     background-image:url(../imgs/fondo-pagina4.png); 
     background-size: cover;
@@ -24,7 +28,7 @@ body {
     
 }
 
-h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif;}
+h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif!important;}
 
 h1 {font-size: 3rem;}
 
@@ -40,7 +44,8 @@ h1 {font-size: 3rem;}
 
 .navbar-nav a:hover { 
     text-decoration: underline double;
-    color: black;
+    color: black !important;
+    transition: 1.5s;
 }
 
 
@@ -127,6 +132,65 @@ h1 {font-size: 3rem;}
     padding: 1rem;
 }
 
+.tarjetitas {
+    display: flex;
+    padding: 1rem 5rem 1rem 5rem;
+    gap: 1rem;
+}
+
+.tarjetita {
+    background-color: rgba(128, 128, 128, 0.493);
+    border: 2px solid gray;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.tarjetita__titulo {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    
+}
+
+.bi-check2 {
+    width: 5rem;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 50%;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+
+.bi-star {
+    width: 5rem;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 50%;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+.bi-flag {
+    width: 5rem;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 50%;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+.tarjetita__texto {
+    width: 100%;
+}
+
 /* FOOTER */
 
 
@@ -162,18 +226,18 @@ h1 {font-size: 3rem;}
 .contacto_footer a {
     text-decoration: none;
     color: white;
+    
 }
 
 .contacto_footer a:hover {
     text-decoration: underline;
     color: black;
+    
 }
 
 .copyr_footer {grid-area: copyr;}
 
-.bi {font-size:1.5rem;
-     padding-inline: 0.5rem;         
-}
+
 
 a .bi {
        text-decoration: none;
@@ -358,6 +422,15 @@ a .bi:hover {color: black;}
     .cartita_comienza {
         font-size: 1rem;
     }
+
+    .tarjetitas {
+        display: flex;
+        padding: 1rem 5rem 1rem 5rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+
         /* quienes somos mobile */
 
     .quienes_somos {
@@ -467,6 +540,13 @@ a .bi:hover {color: black;}
             margin: 0rem;
             width: 100%;
             padding-top: 1rem;
+        }
+
+        .tarjetitas {
+            display: flex;
+            padding: 1rem 1rem 1rem 1rem;
+            gap: 1rem;
+            flex-wrap: wrap;
         }
 
         /* QUIENES SOMOS MOBILE */
