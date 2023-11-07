@@ -1,0 +1,40 @@
+.servicios { 
+    background-color: rgba(128, 128, 128, 0.493);
+    border: 2px solid gray;
+    flex-direction: column;
+    padding: 1rem;
+    @include tablet {display:flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0rem;
+        border-radius: 0;}
+    .servicios_titulo {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+        -webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;
+    }
+    .servicios_sub { 
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        -webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;
+        animation-delay: 1s;
+        
+    }
+    .servicios_parrafo {
+        padding-inline: 1rem;
+        margin-bottom: 3rem;
+        -webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
+        animation-delay: 1.5s;
+        
+        
+    }
+}
+
+
+
+
+

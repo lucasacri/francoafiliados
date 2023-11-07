@@ -1,0 +1,17 @@
+@mixin tablet {
+    @media screen and (max-width: 960px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin botones {
+    @media screen and (max-width: 410px) {
+        @content;
+    }
+}

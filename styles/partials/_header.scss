@@ -1,0 +1,23 @@
+.fondo-verde {
+    background-color: $colorprincipal;
+    gap: 2rem;
+    
+
+    .espacionav {gap: 2rem;}
+
+    .active {
+        background-color: $colorsecundario;
+        border-radius: 1rem;
+    }
+    .navbar-nav a:hover { 
+        background-color: white;
+        border-radius: 1rem;
+        color: black !important;
+        transition: 0.5s;
+        transform: scale(1.2) ;
+        
+    }
+
+   
+}
+

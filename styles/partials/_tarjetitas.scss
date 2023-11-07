@@ -1,0 +1,73 @@
+.tarjetitas {
+    display: flex;
+    padding: 1rem 5rem 1rem 5rem;
+    gap: 1rem;
+    @include tablet {
+        display: flex;
+        padding: 1rem 5rem 1rem 5rem;
+        gap: 1rem;
+        flex-wrap: wrap;}
+    @include mobile {
+        display: flex;
+        padding: 1rem 1rem 1rem 1rem;
+        gap: 1rem;
+        flex-wrap: wrap;}
+
+    .tarjetita {
+        background-color: rgba(128, 128, 128, 0.493);
+        border: 2px solid gray;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        transition: all 0.5s;
+        
+
+        
+
+        &:hover {
+            transform: scale(1.2) translateY(-40px); background-color: gray; border: black solid 2px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            @include mobile {transform: scale(1.1)
+                            }
+        }
+
+        .tarjetita__titulo {
+            width: 100%;
+            padding-bottom: 0.5rem;
+         }
+        
+        .bi-check2 {
+            width: 5rem;
+            background-color: rgba(255, 255, 255, 0.87);
+            border-radius: 50%;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+         .bi-star {
+            width: 5rem;
+            background-color: rgba(255, 255, 255, 0.87);
+            border-radius: 50%;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            
+        }
+        .bi-flag {
+            width: 5rem;
+            background-color: rgba(255, 255, 255, 0.87);
+            border-radius: 50%;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+         }
+        .tarjetita__texto {
+            width: 100%;
+        }
+    
+    }
+    
+}

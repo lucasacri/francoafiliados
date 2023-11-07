@@ -1,0 +1,81 @@
+.contacto {
+    background-color: rgba(128, 128, 128, 0.493);
+    border: 2px solid gray;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    @include tablet {display:flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0rem;
+        border-radius: 0;
+        width: 100%;}
+    @include mobile {padding: 0;
+        padding-top: 1rem;}
+
+    .contacto_titulo { 
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+        -webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;
+        @include tablet {align-items: center; 
+            justify-content: center;
+            font-size: 2.5rem; 
+            text-align: center; 
+            font-family: 'Montserrat', sans-serif;
+            margin: 0rem;
+            width: 100%;}
+        @include mobile {font-size: 2rem; 
+            padding: 0; }
+    }
+
+    .formulario {align-items: center; 
+                display: flex;
+            @include tablet {width: 100%;
+                align-items: center;
+                justify-content: center;} 
+                -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                            animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                
+        .emaildiv {padding: 1rem; 
+        }
+
+        .numerodiv {padding: 1rem; 
+        }
+        
+        .textdiv {padding: 1rem; 
+        }
+        
+        .nombrediv {padding: 1rem;
+        }
+        
+        .botondiv {padding: 1rem;
+            .enviar {padding: 0.7rem; margin-right: 1rem ;border-radius: 0.3rem; background-color:#078a12; color: white; font-weight: 600;}
+            .borrar {padding: 0.7rem; border-radius: 0.3rem; font-weight: 600;}
+        }
+    }
+}
+
+#email {padding: 0.3rem; border-radius: 0.3rem; display: block; align-items: center; }
+#numero {padding: 0.3rem; border-radius: 0.3rem; display: block; align-items: center; }
+#areatexto {padding: 0.3rem; border-radius: 0.3rem; display: block; align-items: center; }
+#nombre {padding: 0.3rem; border-radius: 0.3rem; display: block; align-items: center; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

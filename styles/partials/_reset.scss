@@ -1,0 +1,36 @@
+* {padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: $roboto;}
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    
+    .bi {font-size:1.5rem;
+        padding-inline: 0.5rem;         
+    }
+    
+    body { 
+        background-image:url(../imgs/fondo-pagina4.png); 
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        padding-bottom: 15em;
+        min-height: 100vh;
+        width: 100%;
+        
+        @include tablet {display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex: 1;
+            justify-content: center;
+            text-align: center;}
+        
+    }
+    
+    h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif!important;}
+    
+    h1 {font-size: 3rem;}
+    
