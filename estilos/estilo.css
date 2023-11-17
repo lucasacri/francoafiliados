@@ -74,7 +74,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  padding-bottom: 15em;
+  padding-bottom: 8em;
   min-height: 100vh;
   width: 100%;
 }
@@ -84,8 +84,12 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
-    justify-content: center;
     text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    padding-bottom: 15em;
   }
 }
 
@@ -192,6 +196,11 @@ h1 {
     padding-top: 1rem;
   }
 }
+@media screen and (max-width: 410px) {
+  .cartita h1 {
+    font-size: 1.7rem;
+  }
+}
 .cartita p {
   text-align: center;
   justify-content: center;
@@ -204,6 +213,13 @@ h1 {
 @media screen and (max-width: 600px) {
   .cartita p {
     font-size: 1.2rem;
+    margin-top: 1.5rem;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 410px) {
+  .cartita p {
+    font-size: 1rem;
   }
 }
 .cartita .cartita_comienza {
@@ -284,6 +300,7 @@ h1 {
   display: flex;
   padding: 1rem 5rem 1rem 5rem;
   gap: 1rem;
+  margin-top: 3rem;
 }
 @media screen and (max-width: 960px) {
   .tarjetitas {
@@ -313,7 +330,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 .tarjetitas .tarjetita:hover {
   transform: scale(1.2) translateY(-40px);
@@ -323,7 +340,7 @@ h1 {
 }
 @media screen and (max-width: 600px) {
   .tarjetitas .tarjetita:hover {
-    transform: scale(1.1);
+    transform: none;
   }
 }
 .tarjetitas .tarjetita .tarjetita__titulo {
@@ -362,6 +379,7 @@ h1 {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 960px) {
   .quienes_somos {
@@ -372,6 +390,7 @@ h1 {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0rem;
+    margin-bottom: 1rem;
     border-radius: 0;
   }
 }
@@ -416,6 +435,91 @@ h1 {
   }
 }
 
+.videos_introductorios {
+  background-color: rgba(128, 128, 128, 0.493);
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 960px) {
+  .videos_introductorios {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .videos_introductorios {
+    padding: 0;
+  }
+}
+.videos_introductorios .videoytexto {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 1s;
+  background-color: rgba(128, 128, 128, 0.493);
+}
+@media screen and (max-width: 1200px) {
+  .videos_introductorios .videoytexto {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 960px) {
+  .videos_introductorios .videoytexto {
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .videos_introductorios .videoytexto {
+    padding: 0;
+  }
+}
+.videos_introductorios .videos_titulo {
+  font-size: 3rem;
+  padding: 1rem;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 1s;
+}
+.videos_introductorios .video_parrafo {
+  width: 60%;
+  font-size: 1.3rem;
+  text-align: start;
+  justify-content: center;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation-delay: 1.5s;
+}
+@media screen and (max-width: 1200px) {
+  .videos_introductorios .video_parrafo {
+    margin: 0;
+    padding: 1.5rem;
+    width: 100%;
+  }
+}
+.videos_introductorios .video_edit {
+  border: 3px solid #078a12;
+  border-radius: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation-delay: 0.6s;
+}
+@media screen and (max-width: 600px) {
+  .videos_introductorios .video_edit {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .preguntas_frecuentes {
   background-color: rgba(128, 128, 128, 0.493);
   border: 2px solid gray;
@@ -440,17 +544,36 @@ h1 {
   text-align: center;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 600px) {
+  .preguntas_frecuentes .preguntas_titulo {
+    padding: 0;
+    font-size: 2rem;
+  }
+}
 .preguntas_frecuentes .preguntas_sub {
   margin-bottom: 1.5rem;
   font-size: 2rem;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 1s;
 }
+@media screen and (max-width: 600px) {
+  .preguntas_frecuentes .preguntas_sub {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+}
 .preguntas_frecuentes .preguntas_parrafo {
   padding-inline: 1rem;
   margin-bottom: 3rem;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation-delay: 1.5s;
+  text-align: start;
+}
+@media screen and (max-width: 600px) {
+  .preguntas_frecuentes .preguntas_parrafo {
+    padding: 0;
+    text-align: start;
+  }
 }
 
 .contacto {
@@ -524,6 +647,12 @@ h1 {
 .contacto .formulario .textdiv {
   padding: 1rem;
 }
+@media screen and (max-width: 600px) {
+  .contacto .formulario .textdiv {
+    padding: 0;
+    padding-top: 1rem;
+  }
+}
 .contacto .formulario .nombrediv {
   padding: 1rem;
 }
@@ -575,6 +704,7 @@ h1 {
 .servicios {
   background-color: rgba(128, 128, 128, 0.493);
   border: 2px solid gray;
+  display: flex;
   flex-direction: column;
   padding: 1rem;
 }
@@ -588,6 +718,7 @@ h1 {
     flex-wrap: wrap;
     margin: 0rem;
     border-radius: 0;
+    padding: 0;
   }
 }
 .servicios .servicios_titulo {
@@ -597,16 +728,62 @@ h1 {
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .servicios .servicios_sub {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   font-size: 2rem;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 1s;
 }
 .servicios .servicios_parrafo {
   padding-inline: 1rem;
-  margin-bottom: 3rem;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation-delay: 1.5s;
+  font-size: 1.2rem;
+}
+.servicios .servicios_img {
+  margin: 0.5rem;
+  width: 400px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  transition: all 0.8s;
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation-delay: 0.6s;
+}
+.servicios .tituloyparrafo {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 1s;
+  background-color: rgba(128, 128, 128, 0.493);
+}
+.servicios .tituloyparrafo:hover {
+  transform: scale(1.03) translateY(-30px);
+  background-color: gray;
+  border: black solid 2px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+@media screen and (max-width: 960px) {
+  .servicios .tituloyparrafo:hover {
+    transform: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .servicios .tituloyparrafo {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 960px) {
+  .servicios .tituloyparrafo {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 .footer {

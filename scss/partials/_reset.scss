@@ -17,7 +17,7 @@
         background-size: cover;
         background-attachment: fixed;
         position: relative;
-        padding-bottom: 15em;
+        padding-bottom: 8em;
         min-height: 100vh;
         width: 100%;
         
@@ -25,12 +25,16 @@
             flex-direction: column;
             flex-wrap: wrap;
             flex: 1;
-            justify-content: center;
-            text-align: center;}
+            text-align: center;
+            }
+
+        @include mobile {padding-bottom: 15em;}
         
     }
     
     h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif!important;}
     
     h1 {font-size: 3rem;}
+
+   
     

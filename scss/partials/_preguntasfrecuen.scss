@@ -11,23 +11,32 @@
         flex-wrap: wrap;
         margin: 0rem;
         border-radius: 0;}
+    
     .preguntas_titulo {
         -webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;
         align-items: center;
         text-align: center;
         margin-bottom: 1rem;
+        @include mobile {padding: 0;
+            font-size: 2rem;}
     }
     .preguntas_sub {
         margin-bottom: 1.5rem;
         font-size: 2rem;
         -webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;
         animation-delay: 1s;
+        @include mobile {padding: 0;
+            font-size: 1.5rem;}
+        
     }
     .preguntas_parrafo {
         padding-inline: 1rem;
         margin-bottom: 3rem;
         -webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
         animation-delay: 1.5s;
+        text-align: start;
+        @include mobile {padding: 0;
+            text-align: start;}
     } 
     
 

@@ -5,6 +5,7 @@
     padding: 1rem;
     align-items: center;
     display: flex;
+    
     @include tablet {display:flex;
         justify-content:center;
         align-items: center;
@@ -40,6 +41,8 @@
                 justify-content: center;} 
                 -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                             animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+           
+                        
                 
         .emaildiv {padding: 1rem; 
         }
@@ -48,6 +51,8 @@
         }
         
         .textdiv {padding: 1rem; 
+            @include mobile {padding: 0;
+                padding-top: 1rem;}
         }
         
         .nombrediv {padding: 1rem;

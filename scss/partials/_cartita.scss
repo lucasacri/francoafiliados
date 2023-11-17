@@ -58,6 +58,7 @@
                 margin: 0rem;
                 width: 100%;
                 padding-top: 1rem;}
+            @include botones {font-size: 1.7rem;}
         }
         
         p {text-align: center; 
@@ -67,7 +68,10 @@
             font-size: 1.5rem; 
             margin: 1rem;
             -webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;
-            @include mobile {font-size: 1.2rem;}
+            @include mobile {font-size: 1.2rem;
+            margin-top: 1.5rem;
+        padding: 0}
+        @include botones {font-size: 1rem;}
         }
 
          .cartita_comienza {
